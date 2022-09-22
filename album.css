@@ -1,3 +1,24 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  background-color: #000000;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align:  justify;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+
 .jumbotron {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -14,16 +35,17 @@
 
 .jumbotron p:last-child {
   margin-bottom: 0;
- 
+  
 }
 
 .jumbotron h1 {
   font-weight: 300;
-  
+ 
 }
 
 .jumbotron .container {
   max-width: 40rem;
+
 }
 
 footer {
